@@ -68,6 +68,11 @@ window.addEventListener("scroll", function(){
     header.classList.toggle("scrolled", window.scrollY > 0);
 })
 
+// Ensure body is always scrollable on load
+document.addEventListener('DOMContentLoaded', function() {
+    document.body.style.overflow = 'auto';
+});
+
 // Close sidebar on resize
 window.addEventListener('resize', () => {
     if (window.innerWidth > 754) {
