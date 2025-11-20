@@ -36,7 +36,7 @@ Ryvex is a versatile Discord bot created by Antonis Rusman with Node.js and `dis
 - Help: `/help` — lists all available commands:contentReference[oaicite:4]{index=4}
 
 ### Optional
-- Music playback: `/play`, `/pause`, `/skip`, `/queue`, `/volume` (if music features are enabled):contentReference[oaicite:5]{index=5}
+- Music playback: `/play`, `/pause`, `/skip`, `/queue`, `/volume` (if music features are enabled)
 
 ---
 
