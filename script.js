@@ -68,9 +68,15 @@ window.addEventListener("scroll", function(){
     header.classList.toggle("scrolled", window.scrollY > 0);
 })
 
-// Ensure body is always scrollable on load
-document.addEventListener('DOMContentLoaded', function() {
+// Ensure body and html are always scrollable on load and after a short delay (for mobile)
+function forceScrollEnabled() {
     document.body.style.overflow = 'auto';
+    document.documentElement.style.overflow = 'auto';
+}
+document.addEventListener('DOMContentLoaded', function() {
+    forceScrollEnabled();
+    setTimeout(forceScrollEnabled, 500);
+    setTimeout(forceScrollEnabled, 1200);
 });
 
 // Close sidebar on resize
