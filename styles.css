@@ -45,6 +45,8 @@ body {
 html, body{
     scroll-behavior: smooth;
     overflow-x: hidden;
+    overscroll-behavior-y: none;
+    height: 100%;
 }
 
 /* Svg Fill Color */
@@ -144,9 +146,6 @@ header {
     top: 0;
     z-index: 1000;
     transition: all 0.3s ease;
-}
-
-header.scrolled {
     background-color: rgba(22, 23, 25, 0.6);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -154,9 +153,35 @@ header.scrolled {
     padding: 20px 10%;
 }
 
-.darkmode header.scrolled {
+/* Nudge the hamburger icon slightly down to better align with header text */
+header .nav-icon {
+    transform: translateY(5px);
+}
+
+/* header.scrolled {
+    background-color: rgba(22, 23, 25, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 20px 10%;
+} */
+
+.darkmode header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
     background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    padding: 20px 10%;
 }
 
 .logo {
@@ -242,9 +267,9 @@ button:active {
 }
 
 /* Responsive Sidebar */
-@media screen and (max-width: 754px) {
+@media screen and (max-width: 1010px) {
     header {
-        padding: 30px 20px;
+        padding: 15px 20px;
     }
 
     header.scrolled {
@@ -277,6 +302,9 @@ button:active {
         display: flex;
         justify-content: flex-end;
         margin-bottom: 0;
+        /* Nudge the sidebar close icon down to visually match the header hamburger */
+        transform: translateY(-10px);
+        margin-right: -1px;
     }
 
     .sidebar-header svg {
@@ -284,7 +312,12 @@ button:active {
         height: 30px;
         cursor: pointer;
         fill: var(--clr-text);
-        transition: transform 0.3s ease;
+        /* transition: transform 0.3s ease; */
+    }
+
+    .nav-icon svg:hover {
+        transform: scale(1.1);
+        fill: var(--clr-primary);
     }
 
     .sidebar-header svg:hover {
