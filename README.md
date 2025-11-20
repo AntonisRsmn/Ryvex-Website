@@ -8,14 +8,14 @@ Explore it in action at [https://ryvex.gr](https://ryvex.gr)
 
 ## 🌟 Overview
 
-Ryvex is a versatile Discord bot created by Antonis Rusman with Node.js and `discord.js`. Designed for moderation, entertainment, and utility, Ryvex aims to enhance the server experience with minimal setup.:contentReference[oaicite:1]{index=1}
+Ryvex is a versatile Discord bot created by Antonis Rusman with Node.js and `discord.js`. Designed for moderation, entertainment, and utility, Ryvex aims to enhance the server experience with minimal setup.
 
 ---
 
 ## ⚙️ Features & Commands
 
 ### Moderation
-- `/ban`, `/kick`, `/mute`, `/timeout`, `/clear` – manage members and messaging:contentReference[oaicite:2]{index=2}  
+- `/ban`, `/kick`, `/mute`, `/timeout`, `/clear` – manage members and messaging  
 - `/lock` & `/unlock` – secure sensitive channels  
 - `/add-role`, `/remove-role`, `/unban` – manage roles and permissions
 
@@ -23,7 +23,7 @@ Ryvex is a versatile Discord bot created by Antonis Rusman with Node.js and `dis
 - `/8ball` – yes/no question predictor  
 - `/compliment` – sends a compliment  
 - `/meme` – delivers a random meme  
-- `/gaymeter`, `/ppmeter`, `/rps` – whimsical mini‑games and meters:contentReference[oaicite:3]{index=3}
+- `/gaymeter`, `/ppmeter`, `/rps` – whimsical mini‑games and meters
 
 ### Utility
 - `/botinfo` – shows Ryvex’s current stats  
@@ -33,7 +33,7 @@ Ryvex is a versatile Discord bot created by Antonis Rusman with Node.js and `dis
 - `/support` – link to Ryvex Support Server  
 - `/website` – open Ryvex official site  
 - `/donate` – options for supporting development  
-- Help: `/help` — lists all available commands:contentReference[oaicite:4]{index=4}
+- Help: `/help` — lists all available commands
 
 ### Optional
 - Music playback: `/play`, `/pause`, `/skip`, `/queue`, `/volume` (if music features are enabled)
@@ -43,7 +43,7 @@ Ryvex is a versatile Discord bot created by Antonis Rusman with Node.js and `dis
 ## 🚀 Installation & Setup
 
 ### 1. Invite the Bot
-Visit Ryvex’s website or use the invite link on bot lists like Top.gg to add Ryvex to your server.:contentReference[oaicite:6]{index=6}
+Visit Ryvex’s website or use the invite link on bot lists like Top.gg to add Ryvex to your server.
 
 ### 2. Enable Slash Commands
 Ensure Ryvex has proper permissions in your Discord server, including:
@@ -58,7 +58,7 @@ Use Discord role settings to limit who can use moderation commands. You may also
 
 ## 🧩 Tech Stack & Architecture
 
-- **Built with**: Node.js & `discord.js` library:contentReference[oaicite:7]{index=7}  
+- **Built with**: Node.js & `discord.js` library 
 - **Slash command handlers** using Discord API v10  
 - **Hosted**: usually on cloud VPS or serverless platform  
 - **No external dependencies** required for operation—stateless and easy to deploy
@@ -69,7 +69,7 @@ Use Discord role settings to limit who can use moderation commands. You may also
 
 - ✅ Comprehensive features: mix of moderation tools and fun utilities  
 - ⚡ Slash commands provide clean, intuitive UX  
-- 🔄 Lightweight and always-on (24/7 runtime supported):contentReference[oaicite:8]{index=8}  
+- 🔄 Lightweight and always-on (24/7 runtime supported)  
 - 🌐 Web dashboard via [ryvex.gr](https://ryvex.gr) and support community
 
 ---
